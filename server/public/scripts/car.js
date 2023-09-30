@@ -12,14 +12,14 @@ const renderCar = async () => {
 console.log(car)
     if (car){
         document.getElementById('image').src = car.image
-        document.getElementById('name').textContent = car.Name
-        document.getElementById('manufacturer').textContent = 'Manufacturer: ' + car["Manufacturer"]
-        document.getElementById('top-speed').textContent = 'Top Speed (mph): ' + car['Top Speed (mph)']
-        document.getElementById('0-60').textContent = '0-60 mph (seconds): ' + car["0-60 mph (seconds)"]
-        document.getElementById('engine').textContent = 'Engine: ' + car.Engine
-        document.getElementById('horsepower').textContent = 'Horsepower: ' + car.Horsepower
-        document.getElementById('price').textContent = 'Price (starting): ' + car['Price (starting)']
-        document.title = `Listicle - ${car.Name}`
+        document.getElementById('name').textContent = car.name
+        document.getElementById('manufacturer').textContent = 'Manufacturer: ' + car.manufacturer
+        document.getElementById('top-speed').textContent = 'Top Speed (mph): ' + car.topSpeed
+        document.getElementById('0-60').textContent = '0-60 mph (seconds): ' + car.acceleration
+        document.getElementById('engine').textContent = 'Engine: ' + car.engine
+        document.getElementById('horsepower').textContent = 'Horsepower: ' + car.horsepower
+        document.getElementById('price').textContent = 'Price (starting): ' + car.price
+        document.title = `Listicle - ${car.name}`
     }
     else {
         const message = document.createElement('h2')

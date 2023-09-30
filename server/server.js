@@ -1,4 +1,5 @@
 import express from "express";
+import './config/dotenv.js'
 import carsRouter from './routes/cars.js'
 
 const app = express();

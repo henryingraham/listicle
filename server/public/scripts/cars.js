@@ -18,15 +18,15 @@ const renderCars = async () => {
             topContainer.style.backgroundImage = `url(${car.image})`
 
             const name = document.createElement('h3')
-            name.textContent = car.Name
+            name.textContent = car.name
             bottomContainer.appendChild(name)
 
             const pricePoint = document.createElement('p')
-            pricePoint.textContent = 'Price (starting): ' + car['Price (starting)']
+            pricePoint.textContent = 'Price (starting): ' + car.price
             bottomContainer.appendChild(pricePoint)
 
             const manufacturer = document.createElement('p')
-            manufacturer.textContent = "Manufacturer: " + car["Manufacturer"]
+            manufacturer.textContent = "Manufacturer: " + car.manufacturer
             bottomContainer.appendChild(manufacturer)
 
             const link = document.createElement('a')
